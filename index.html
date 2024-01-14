@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interno</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <svg style="display: none;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <symbol viewBox="0 0 15 15" id="arrow"><path d="M4.96217 1.53375C4.78642 1.70956 4.68769 1.94797 4.68769 2.19656C4.68769 2.44515 4.78642 2.68357 4.96217 2.85937L9.6028 7.5L4.96217 12.1406C4.7914 12.3174 4.6969 12.5543 4.69904 12.8001C4.70118 13.0459 4.79977 13.281 4.97359 13.4548C5.14741 13.6287 5.38255 13.7272 5.62836 13.7294C5.87417 13.7315 6.11098 13.637 6.2878 13.4662L11.5912 8.16281C11.767 7.987 11.8657 7.74859 11.8657 7.5C11.8657 7.25141 11.767 7.01299 11.5912 6.83719L6.2878 1.53375C6.11199 1.358 5.87358 1.25926 5.62499 1.25926C5.37639 1.25926 5.13798 1.358 4.96217 1.53375Z"/></symbol><symbol viewBox="0 0 10 19" id="facebook"><g clip-path="url(#bclip0_1_347)"><path d="M9.18359 10.5471L9.67578 7.31274H6.54688V5.20337C6.54688 4.28931 6.96875 3.44556 8.375 3.44556H9.81641V0.668213C9.81641 0.668213 8.51562 0.422119 7.28516 0.422119C4.71875 0.422119 3.03125 2.00415 3.03125 4.81665V7.31274H0.148438V10.5471H3.03125V18.4221H6.54688V10.5471H9.18359Z"/></g><defs><clipPath id="bclip0_1_347"><path d="M0 0H10V19H0z"/></clipPath></defs></symbol><symbol viewBox="0 0 16 17" id="in"><g clip-path="url(#cclip0_1_351)"><path d="M3.64062 16.1721V5.6604H0.371094V16.1721H3.64062ZM1.98828 4.25415C3.04297 4.25415 3.88672 3.37524 3.88672 2.32056C3.88672 1.30103 3.04297 0.457275 1.98828 0.457275C0.96875 0.457275 0.125 1.30103 0.125 2.32056C0.125 3.37524 0.96875 4.25415 1.98828 4.25415ZM15.8398 16.1721H15.875V10.4065C15.875 7.59399 15.2422 5.41431 11.9375 5.41431C10.3555 5.41431 9.30078 6.29321 8.84375 7.10181H8.80859V5.6604H5.67969V16.1721H8.94922V10.969C8.94922 9.5979 9.19531 8.29712 10.8828 8.29712C12.5703 8.29712 12.6055 9.84399 12.6055 11.0745V16.1721H15.8398Z"/></g><defs><clipPath id="cclip0_1_351"><path d="M0 0H16V17H0z"/></clipPath></defs></symbol><symbol viewBox="0 0 448 512" id="instagram"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></symbol><symbol viewBox="0 0 34 34" id="phone"><g clip-path="url(#eclip0_1_48)"><path d="M32.0012 26.0749C30.7796 24.8442 27.8211 23.0482 26.3857 22.3243C24.5164 21.3828 24.3625 21.3059 22.8933 22.3974C21.9133 23.1258 21.2617 23.7766 20.1148 23.532C18.9678 23.2874 16.4754 21.9082 14.2931 19.7329C12.1107 17.5576 10.6514 14.9931 10.4061 13.8501C10.1607 12.7071 10.8222 12.0632 11.5438 11.081C12.5607 9.69642 12.4838 9.46566 11.6145 7.59651C10.9368 6.14273 9.08833 3.21208 7.85291 1.99675C6.53134 0.691422 6.53134 0.922181 5.67979 1.27601C4.98652 1.56768 4.32141 1.92222 3.69281 2.3352C2.46201 3.15285 1.77892 3.83206 1.30122 4.85278C0.823512 5.87351 0.608892 8.26648 3.07588 12.7478C5.54286 17.2292 7.27367 19.5206 10.8561 23.0928C14.4385 26.6649 17.1931 28.5856 21.2202 30.844C26.2018 33.6339 28.1126 33.09 29.1365 32.6131C30.1604 32.1362 30.8427 31.4593 31.662 30.2286C32.076 29.6011 32.4314 28.9368 32.7235 28.2441C33.0781 27.3957 33.3089 27.3957 32.0012 26.0749Z"/></g><defs><clipPath id="eclip0_1_48"><path d="M0 0H34V34H0z"/></clipPath></defs></symbol><symbol viewBox="0 0 496 512" id="pinterest"><path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/></symbol><symbol viewBox="0 0 448 512" id="skype"><path d="M424.7 299.8c2.9-14 4.7-28.9 4.7-43.8 0-113.5-91.9-205.3-205.3-205.3-14.9 0-29.7 1.7-43.8 4.7C161.3 40.7 137.7 32 112 32 50.2 32 0 82.2 0 144c0 25.7 8.7 49.3 23.3 68.2-2.9 14-4.7 28.9-4.7 43.8 0 113.5 91.9 205.3 205.3 205.3 14.9 0 29.7-1.7 43.8-4.7 19 14.6 42.6 23.3 68.2 23.3 61.8 0 112-50.2 112-112 .1-25.6-8.6-49.2-23.2-68.1zm-194.6 91.5c-65.6 0-120.5-29.2-120.5-65 0-16 9-30.6 29.5-30.6 31.2 0 34.1 44.9 88.1 44.9 25.7 0 42.3-11.4 42.3-26.3 0-18.7-16-21.6-42-28-62.5-15.4-117.8-22-117.8-87.2 0-59.2 58.6-81.1 109.1-81.1 55.1 0 110.8 21.9 110.8 55.4 0 16.9-11.4 31.8-30.3 31.8-28.3 0-29.2-33.5-75-33.5-25.7 0-42 7-42 22.5 0 19.8 20.8 21.8 69.1 33 41.4 9.3 90.7 26.8 90.7 77.6 0 59.1-57.1 86.5-112 86.5z"/></symbol><symbol viewBox="0 0 448 512" id="telegram"><path d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"/></symbol><symbol viewBox="0 0 18 15" id="twitter"><g clip-path="url(#iclip0_1_349)"><path d="M16.1367 3.76587C16.8398 3.23853 17.4727 2.60571 17.9648 1.86743C17.332 2.14868 16.5938 2.35962 15.8555 2.42993C16.6289 1.9729 17.1914 1.26978 17.4727 0.390869C16.7695 0.812744 15.9609 1.12915 15.1523 1.30493C14.4492 0.56665 13.5 0.144775 12.4453 0.144775C10.4062 0.144775 8.75391 1.79712 8.75391 3.83618C8.75391 4.11743 8.78906 4.39868 8.85938 4.67993C5.80078 4.50415 3.05859 3.02759 1.23047 0.812744C0.914062 1.34009 0.738281 1.9729 0.738281 2.67603C0.738281 3.94165 1.37109 5.06665 2.39062 5.73462C1.79297 5.69946 1.19531 5.55884 0.703125 5.27759V5.31274C0.703125 7.10571 1.96875 8.58228 3.65625 8.93384C3.375 9.00415 3.02344 9.07446 2.70703 9.07446C2.46094 9.07446 2.25 9.03931 2.00391 9.00415C2.46094 10.4807 3.83203 11.5354 5.44922 11.5706C4.18359 12.5549 2.60156 13.1526 0.878906 13.1526C0.5625 13.1526 0.28125 13.1174 0 13.0823C1.61719 14.137 3.55078 14.7346 5.66016 14.7346C12.4453 14.7346 16.1367 9.14478 16.1367 4.25806C16.1367 4.08228 16.1367 3.94165 16.1367 3.76587Z"/></g><defs><clipPath id="iclip0_1_349"><path d="M0 0H18V15H0z"/></clipPath></defs></symbol>
+  </svg>
+
+  <section class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="logo" href="!#">
+          <img src="./img/logo.svg" alt="Logo">
+        </a>
+        <nav class="header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="!#">Home</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="!#">About Us</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="!#">Services</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="!#">Pages</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="!#">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="burger-btn">
+          <div class="burger-btn__middle"></div>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero__inner">
+        <h1 class="hero__title">Let's Create Your Dream Interior</h1>
+        <div class="hero__text">
+          <p>The world needs innovators and problem solvers who turn challenges into greater opportunities.</p>
+        </div>
+        <div class="hero__cta button">Get Started</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="container">
+      <div class="services__inner">
+        <div class="services__item item-services">
+          <h5 class="item-services__title">Interior Design</h5>
+          <div class="item-services__text">
+            <p>Enhancing the interior to achieve a healthier environment for the people using right space.</p>
+          </div>
+          <a class="item-services__more" href="#!">View More</a>
+        </div>
+        <div class="services__item item-services">
+          <h5 class="item-services__title">Furniture</h5>
+          <div class="item-services__text">
+            <p>Movable articles that are used to make a room or building suitable for living or working.</p>
+          </div>
+          <a class="item-services__more" href="#!">View More</a>
+        </div>
+        <div class="services__item item-services">
+          <h5 class="item-services__title">Flooring</h5>
+          <div class="item-services__text">
+            <p>Thin object any finished material applied over a floor structure to provide a walking surface.</p>
+          </div>
+          <a class="item-services__more" href="#!">View More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="container">
+      <div class="about__inner">
+        <div class="about__body">
+          <h2 class="about__title title">We Tackle The Most Challenging Designs</h2>
+          <div class="about__text">
+            <p>
+              The world needs innovators and problem solvers who turn challenges into greater opportunities. We have an insatiable curiosity about transformative trends challenging the status.
+            </p>
+          </div>
+          <div class="about__action">
+            <div class="about__call call-about">
+              <a class="call-about__icon" href="tel:012345678">
+                <svg class="phone-icon">
+                  <use href="#phone"></use>
+                </svg>
+              </a>
+              <div class="call-about__text">
+                <div class="call-about__num">012345678</div>
+                <div class="call-about__des">Call Us Anytime</div>
+              </div>
+            </div>
+            <div class="about__button button">Get Free Estimate</div>
+          </div>
+        </div>
+        <div class="about__image">
+          <img src="./img/about.jpg" alt="interior">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <div class="container">
+      <div class="reviews__inner">
+        <h2 class="reviews__title title">
+          What the People Thinks<br>About Interno
+        </h2>
+        <div class="reviews__cards">
+          <div class="reviews__card">
+            <div class="card-reviews">
+              <div class="card-reviews__customer customer">
+                <div class="customer__photo">
+                  <img src="./img/reviews/1.jpg" alt="photo">
+                </div>
+                <div class="customer__des">
+                  <div class="customer__name">Lisa Clairton</div>
+                  <div class="customer__country">New York, USA</div>
+                </div>
+              </div>
+              <div class="card-reviews__text">
+                <p>We selected Interno interior because of rigorous design background & education.</p>
+              </div>
+            </div>
+          </div>
+          <div class="reviews__card">
+            <div class="card-reviews">
+              <div class="card-reviews__customer customer">
+                <div class="customer__photo">
+                  <img src="./img/reviews/3.jpg" alt="photo">
+                </div>
+                <div class="customer__des">
+                  <div class="customer__name">David Knight</div>
+                  <div class="customer__country">Sydney, Australia</div>
+                </div>
+              </div>
+              <div class="card-reviews__text">
+                <p>The team exceeded our expectations and emerged as leaders of our project’s.</p>
+              </div>
+            </div>
+          </div>
+          <div class="reviews__card">
+            <div class="card-reviews">
+              <div class="card-reviews__customer customer">
+                <div class="customer__photo">
+                  <img src="./img/reviews/2.jpg" alt="photo">
+                </div>
+                <div class="customer__des">
+                  <div class="customer__name">Anna Smith</div>
+                  <div class="customer__country">Paris, France</div>
+                </div>
+              </div>
+              <div class="card-reviews__text">
+                <p>They balanced the architectural vision and the project realities beautifully.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="brands">
+    <div class="container">
+      <div class="brands__inner">
+        <div class="brands__logo">
+          <img src="./img/brands/home.svg" alt="home">
+        </div>
+        <div class="brands__logo">
+          <img src="./img/brands/vs.svg" alt="vs">
+        </div>
+        <div class="brands__logo">
+          <img src="./img/brands/brand.svg" alt="brand">
+        </div>
+        <div class="brands__logo">
+          <img src="./img/brands/nature-home.svg" alt="nature home">
+        </div>
+        <div class="brands__logo">
+          <img src="./img/brands/classic.svg" alt="classic">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="projects">
+    <div class="container">
+      <div class="projects__inner">
+        <h2 class="projects__title title">Recent Projects</h2>
+        <div class="projects__text">
+          <p>With tools to make every part of your process more human and a support team excited to help you, getting started with us never been easier.</p>
+        </div>
+      </div>
+      <div class="projects__cards">
+        <div class="projects__card">
+          <div class="card-project">
+            <a class="card-project__picture-ibg" href="#!">
+              <img class="card-project__img" src="./img/projects/1.jpg" alt="1">
+            </a>
+            <div class="card-project__body">
+              <div class="card-project__text">
+                <a class="card-project__title" href="#!">Winery Dry Creek Building</a>
+                <p class="card-project__style">Art Modern</p>
+              </div>
+              <a class="card-project__btn" href="#!">
+                <svg class="arrow-icon">
+                  <use href="#arrow"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="projects__card">
+          <div class="card-project">
+            <a class="card-project__picture-ibg" href="#!">
+              <img class="card-project__img" src="./img/projects/2.jpg" alt="1">
+            </a>
+            <div class="card-project__body">
+              <div class="card-project__text">
+                <a class="card-project__title" href="#!">Creative Workplace Design</a>
+                <p class="card-project__style">Minimalist</p>
+              </div>
+              <a class="card-project__btn" href="#!">
+                <svg class="arrow-icon">
+                  <use href="#arrow"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="projects__card">
+          <div class="card-project">
+            <a class="card-project__picture-ibg" href="#!">
+              <img class="card-project__img" src="./img/projects/3.jpg" alt="1">
+            </a>
+            <div class="card-project__body">
+              <div class="card-project__text">
+                <a class="card-project__title" href="#!">Bedroom Interior Pot Work</a>
+                <p class="card-project__style">Modern</p>
+              </div>
+              <a class="card-project__btn" href="#!">
+                <svg class="arrow-icon">
+                  <use href="#arrow"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="projects__card">
+          <div class="card-project">
+            <a class="card-project__picture-ibg" href="#!">
+              <img class="card-project__img" src="./img/projects/4.jpg" alt="1">
+            </a>
+            <div class="card-project__body">
+              <div class="card-project__text">
+                <a class="card-project__title" href="#!">Light Ambience Sepia Design</a>
+                <p class="card-project__style">Scandinavian</p>
+              </div>
+              <a class="card-project__btn" href="#!">
+                <svg class="arrow-icon">
+                  <use href="#arrow"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="statistic">
+    <div class="container">
+      <div class="statistic__inner">
+        <div class="statistic__card">
+          <div class="statistic__num">12</div>
+          <div class="statistic__des">Years Of Experiance</div>
+        </div>
+        <div class="statistic__card">
+          <div class="statistic__num">5K</div>
+          <div class="statistic__des">Success Project</div>
+        </div>
+        <div class="statistic__card">
+          <div class="statistic__num">1K</div>
+          <div class="statistic__des">Active Project</div>
+        </div>
+        <div class="statistic__card">
+          <div class="statistic__num">4K</div>
+          <div class="statistic__des">Happy Customers</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="blog">
+    <div class="container">
+      <div class="blog__inner">
+        <h2 class="blog__title title">Recent Blogs</h2>
+        <div class="blog__text">Get updates about our latest trends and techniques used in
+          interior design project works.</div>
+      </div>
+      <div class="blog__cards">
+        <div class="blog__card">
+          <div class="card-blog">
+            <a class="card-blog__picture-ibg" href="#!">
+              <img class="card-blog__img" src="./img/blog/1.jpg" alt="img">
+              <div class="card-blog__img-content">Kitchen Design</div>
+            </a>
+            <div class="card-blog__body">
+              <a class="card-blog__title" href="#!">Residential Interior Designer In New York, USA</a>
+              <div class="card-blog__des">
+                <p class="card-blog__date">November 25, 2023</p>
+                <a class="card-blog__btn" href="#!">
+                  <svg class="arrow-icon">
+                    <use href="#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blog__card">
+          <div class="card-blog">
+            <a class="card-blog__picture-ibg" href="#!">
+              <img class="card-blog__img" src="./img/blog/2.jpg" alt="img">
+              <div class="card-blog__img-content">Living Room</div>
+            </a>
+            <div class="card-blog__body">
+              <a class="card-blog__title" href="#!">How To Choose The Best Wall Art & Decor House?</a>
+              <div class="card-blog__des">
+                <p class="card-blog__date">October 05, 2023</p>
+                <a class="card-blog__btn" href="#!">
+                  <svg class="arrow-icon">
+                    <use href="#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blog__card">
+          <div class="card-blog">
+            <a class="card-blog__picture-ibg" href="#!">
+              <img class="card-blog__img" src="./img/blog/3.jpg" alt="img">
+              <div class="card-blog__img-content">Minimalist Interior</div>
+            </a>
+            <div class="card-blog__body">
+              <a class="card-blog__title" href="#!">Tips To Increase The Interior Value Of Your House</a>
+              <div class="card-blog__des">
+                <p class="card-blog__date">June 11, 2023</p>
+                <a class="card-blog__btn" href="#!">
+                  <svg class="arrow-icon">
+                    <use href="#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blog__card">
+          <div class="card-blog">
+            <a class="card-blog__picture-ibg" href="#!">
+              <img class="card-blog__img" src="./img/blog/4.jpg" alt="img">
+              <div class="card-blog__img-content">Kitchen Design</div>
+            </a>
+            <div class="card-blog__body">
+              <a class="card-blog__title" href="#!">Best Solution For Any Office & Business Interior</a>
+              <div class="card-blog__des">
+                <p class="card-blog__date">November 23, 2022</p>
+                <a class="card-blog__btn" href="#!">
+                  <svg class="arrow-icon">
+                    <use href="#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blog__card">
+          <div class="card-blog">
+            <a class="card-blog__picture-ibg" href="#!">
+              <img class="card-blog__img" src="./img/blog/5.jpg" alt="img">
+              <div class="card-blog__img-content">Living Room</div>
+            </a>
+            <div class="card-blog__body">
+              <a class="card-blog__title" href="#!">Get Solution For Building Construction Work</a>
+              <div class="card-blog__des">
+                <p class="card-blog__date">September 01, 2022</p>
+                <a class="card-blog__btn" href="#!">
+                  <svg class="arrow-icon">
+                    <use href="#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blog__card">
+          <div class="card-blog">
+            <a class="card-blog__picture-ibg" href="#!">
+              <img class="card-blog__img" src="./img/blog/6.jpg" alt="img">
+              <div class="card-blog__img-content">Minimalist Interior</div>
+            </a>
+            <div class="card-blog__body">
+              <a class="card-blog__title" href="#!">Attain The Best Finish For The Kitchen Cabinets</a>
+              <div class="card-blog__des">
+                <p class="card-blog__date">August 15, 2022</p>
+                <a class="card-blog__btn" href="#!">
+                  <svg class="arrow-icon">
+                    <use href="#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacts">
+    <div class="container">
+      <div class="contacts__inner">
+        <div class="contacts__text">
+          <h2 class="contacts__title title title--white">Wanna join the interno?</h2>
+          <div class="contacts__subtitle">
+            <p>Contact Us & Get a Free Consultation</p>
+          </div>
+        </div>
+        <button class="contacts__button button button--accent">Connect With us</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__info">
+          <a class="logo" href="#!">
+            <img src="./img/logo.svg" alt="logo">
+          </a>
+          <div class="footer__des">
+            <p>We are the leading architect and interior design firm in the world.</p>
+          </div>
+          <div class="footer__social">
+            <a class="footer__social-icon" href="#!">
+              <svg class="icon">
+                <use href="#facebook"></use>
+              </svg>
+            </a>
+            <a class="footer__social-icon" href="#!">
+              <svg class="icon">
+                <use href="#twitter"></use>
+              </svg>
+            </a>
+            <a class="footer__social-icon" href="#!">
+              <svg class="icon">
+                <use href="#in"></use>
+              </svg>
+            </a>
+            <a class="footer__social-icon" href="#!">
+              <svg class="icon">
+                <use href="#instagram"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <ul class="footer__column">
+          <li class="footer__column-title">
+            Pages
+          </li>
+          <li class="footer__column-item">
+            <a href="#!" class="footer__column-link">Style Guide</a>
+          </li>
+          <li class="footer__column-item">
+            <a href="#!" class="footer__column-link">Protected</a>
+          </li>
+          <li class="footer__column-item">
+            <a href="#!" class="footer__column-link">Licenses</a>
+          </li>
+          <li class="footer__column-item">
+            <a href="#!" class="footer__column-link">Changelog</a>
+          </li>
+          <li class="footer__column-item">
+            <a href="#!" class="footer__column-link">404</a>
+          </li>
+        </ul>
+        <ul class="footer__column">
+          <li class="footer__column-title">
+            Explore
+          </li>
+          <li class="footer__column-item">
+            <a href="#!" class="footer__column-link">About Us</a>
+          </li>
+          <li class="footer__column-item">
+            <a href="#!" class="footer__column-link">Recent Blog</a>
+          </li>
+          <li class="footer__column-item">
+            <a href="#!" class="footer__column-link">Pricing Plan</a>
+          </li>
+          <li class="footer__column-item">
+            <a href="#!" class="footer__column-link">Our Projects</a>
+          </li>
+          <li class="footer__column-item">
+            <a href="#!" class="footer__column-link">Contact Us</a>
+          </li>
+        </ul>
+        <div class="footer__contact">
+          <p class="footer__contact-title">Contact</p>
+          <p class="footer__address">
+            53, East Birchwood Ave. 
+            <span>Brooklyn, New York 11201, USA.</span>
+          </p>
+          <a class="footer__email" href="mailto:contact@interno.com">contact@interno.com</a>
+          <a class="footer__phone" href="tel:9854657890">(985) 465 - 7890</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__copyright">
+      <p>Copyright &copy; Interno | Designed by <a href="#!">Victorflow</a></p>
+      <p>Templates — Powered by <a href="#!">Webflow</a></p>
+    </div>
+  </footer>
+</body>
+</html>
